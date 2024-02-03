@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Selecting and Manipulating using Id and querySelector</title>
+</head>
+<body>
+<div id="container">
+    <p id="paragraph1">This is first paragraph</p>
+    <p id="paragraph2">This is second paragraph</p>
+    <p id="paragraph3">This is third paragraph</p>
+
+    <ul>
+        <li>Item 1</li>
+        <li class="special">Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <div id="myDiv"></div>
+    <button id="button">Click me</button>
+</div>
+
+</body>
+<script>
+    var secondPara = document.getElementById("paragraph2");
+    console.log(secondPara.textContent);
+
+    var thirdPara = document.getElementById("paragraph3");
+    thirdPara.textContent="Updated text content!";
+
+    var appendStrong = document.getElementById("myDiv");
+    appendStrong.innerHTML="<strong>This is bold text.</strong>";
+
+    var listItem = document.querySelector(".special");
+    console.log(listItem.textContent);
+</script>
+</html>

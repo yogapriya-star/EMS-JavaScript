@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!--Link CSS File-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;display=swap" rel="stylesheet">
+
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<!--Offer Bar-->
+<div id="offer-bar" class="mx-auto bg-black text-white text-center text-sm p-2 md:text-xl">
+    <p>Sign Up and <b>GET 20% OFF</b> for your first Order
+        <i id="offer-close" style="margin-left: 10%; cursor: pointer;" class="fa-solid fa-xmark"></i>
+    </p>
+</div>
+
+<!-- Responsive Navbar -->
+<nav class="bg-white p-5 flex items-center justify-between shadow-xl sticky top-0 z-30">
+    <h1 class="text-2xl font-bold">Nostra</h1>
+
+    <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+
+
+    <ul class="flex gap-5 text-gray-600 hidden md:flex">
+        <li><a class="hover:underline hover:text-black" href="index.html#home">Home</a></li>
+        <li><a class="hover:underline hover:text-black" href="index.html#new-arrival">New Arrival</a></li>
+        <li><a class="hover:underline hover:text-black" href="index.html#most-wanted">Most Wanted</a></li>
+        <li><a class="hover:underline hover:text-black" href="./contactus.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+
+<!-- Side Navbar -->
+<section id="sidenav" class="bg-black text-white fixed z-40 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; left: -50%;">
+    <div class="text-right p-5">
+        <p id="close-nav" class="inline cursor-pointer">X</p>
+    </div>
+    <ul class="flex flex-col gap-10  font-bold items-left p-5 text-white-600">
+        <li><a class="hover:underline" href="index.html#home">Home</a></li>
+        <li><a class="hover:underline" href="index.html#new-arrival">New Arrival</a></li>
+        <li><a class="hover:underline" href="index.html#most-wanted">Most Wanted</a></li>
+        <li><a class="hover:underline" href="./contactus.html">Contact Us</a></li>
+    </ul>
+</section>
+
+<!-- Collection Section -->
+<section>
+    <div class="grid grid-cols-5 py-8">
+        <!-- First column with 40% width -->
+        <div class="border-r-2 border-gray-600 col-span-2 ">
+            <div class="p-20">
+                <h1 class="font-bold mt-5 mb-5 text-2xl">Occasion</h1>
+                <div class="flex items-center mb-4">
+                    <input id="beach" type="checkbox" name="tags" value="beach" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="beach" class="ms-2 text-xl font-medium text-gray-900 dark:text-gray-300">Beach</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <input id="summer" type="checkbox"  name="tags" value="summer" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="summer" class="ms-2 text-xl font-medium text-gray-900 dark:text-gray-300">Summer</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <input id="party" type="checkbox" name="tags" value="party" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="party" class="ms-2 text-xl font-medium text-gray-900 dark:text-gray-300">Party</label>
+                </div>
+
+                <h1 class="font-bold mt-5 mb-5 text-2xl">Colors</h1>
+                <div class="flex items-center mb-4">
+                    <input  id="red" type="checkbox" name="tags" value="red" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="red" class="ms-2 text-xl font-medium text-gray-900 dark:text-gray-300">Red</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <input id="blue" type="checkbox" name="tags" value="blue" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="blue" class="ms-2 text-xl font-medium text-gray-900 dark:text-gray-300">Blue</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <input id="white" type="checkbox" name="tags" value="white" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="white" class="ms-2 text-xl font-medium text-gray-900 dark:text-gray-300">White</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <input id="green" type="checkbox" name="tags" value="green" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="green" class="ms-2 text-xl font-medium text-gray-900 dark:text-gray-300">Green</label>
+                </div>
+
+                <h1 class="font-bold mt-5 mb-5 text-2xl">Arrivals</h1>
+                <div class="flex items-center mb-4">
+                    <input  id="new" type="checkbox" name="tags" value="new" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="new" class="ms-2 text-xl font-medium text-gray-900 dark:text-gray-300">New</label>
+                </div>
+                <div class="flex items-center mb-4">
+                    <input id="old" type="checkbox" name="tags" value="old" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="old" class="ms-2 text-xl font-medium text-gray-900 dark:text-gray-300">Old</label>
+                </div>
+                <button  onclick="clearFilter()" type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Clear Filter</button>
+            </div>
+
+        </div>
+
+        <!-- Second column with 60% width -->
+        <div class="col-span-3 p-4">
+            <div class="relative">
+                <input type="text" id="search" class="border border-black p-2 pl-10 m-3" placeholder="Search..." style="width: 80%;" />
+                <i id="input-close" style="left: 77%; top: 50%; transform: translateY(-50%); cursor: pointer; display: none;" class="fa-solid fa-xmark"></i>
+            </div>
+            <div id="product-container" class="grid grid-cols-3 mt-5 gap-5 products">
+                <!-- Products -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- News Letter -->
+<section class="text-center py-8">
+    <h1 class="text-2xl md:text-5xl font-bold mt-5 text-center">Join our News Letter</h1>
+    <p class="text-lg  md:text-2xl">Signup for our email newspaper to get exclusive discounts, updates, and more.</p>
+    <input type="text" class="border border-black p-2 m-3" style="width: 80%;" />
+    <br>
+    <button class="bg-black text-white p-3 m-1 hover:underline">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+</section>
+
+<!-- Footer -->
+<section class="bg-gray-700 p-10 flex flex-col gap-5 text-white">
+    <h1 class="text-4xl font-bold">Nostra</h1>
+    <p>The standard chunk of Lorem ipsum used since the 1500s is reproduced below for those interest</p>
+    <div class="flex flex-row gap-5">
+        <i class="fa-brands fa-instagram" style="color: #fff;"></i>
+        <i class="fa-brands fa-twitter" style="color: #fff;"></i>
+        <i class="fa-brands fa-facebook" style="color: #fff;"></i>
+    </div>
+    <p>@ 2024 Nostra.com</p>
+</section>
+<!--Link Javascript File-->
+<script src="js/collection.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</body>
+</html>

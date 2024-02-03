@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Prepend</title>
+</head>
+<body>
+<button id="add">Add</button>
+<div id="container">
+    <p>Bye</p>
+</div>
+</body>
+<script>
+    var container = document.getElementById("container");
+
+    var btn = document.getElementById("add");
+    btn.addEventListener("click", function (){
+        var heading = document.createElement("h1");
+        heading.textContent = "Hello";
+        console.log(heading);
+        container.prepend(heading)
+    })
+</script>
+</html>

@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Append</title>
+</head>
+<body>
+<button id="add">Add</button>
+<div id="container"></div>
+</body>
+<script>
+    var container = document.getElementById("container");
+
+    var btn = document.getElementById("add");
+    btn.addEventListener("click", function (){
+        var heading = document.createElement("h1");
+        heading.textContent = "Hello";
+        console.log(heading);
+        container.append(heading)
+    })
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Search-Filter</title>
+</head>
+<body class="pt-10 flex items-center justify-center bg-gray-100">
+<div class="w-full max-w-2xl p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+    <h5 class="text-xl text-center font-medium text-gray-900 dark:text-white">Search-Filter</h5>
+    <div>
+        <div class="mb-4 flex  space-x-2">
+            <input type="text" id="searchInput" class="border border-black p-2" placeholder="Search by title..." style="width: 95%;" />
+            <button onclick="searchPosts()" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                Search
+            </button>
+            <button id="input-close" style="display: none;" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                Clear
+            </button>
+        </div>
+        <div id="searchResults" class="grid grid-cols-1 mt-5 gap-5 products">
+            <!-- Products -->
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

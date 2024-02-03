@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <title>CAPTCHA Generator</title>
+    </head>
+    <body class="pt-10 flex items-center justify-center bg-gray-100">
+        <div class="bg-white p-8 rounded shadow-md">
+            <div class="text-center mb-4 font-medium" id="captcha-container"></div>
+            <div class="mb-4 flex  space-x-2">
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text"  id="captcha-input" placeholder="Enter the CAPTCHA">
+                <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"  onclick="validateCaptcha()" type="button">
+                   Verify
+                </button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

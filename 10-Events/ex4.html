@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>OnClick Events</title>
+</head>
+<body>
+<button onclick="clicked(event)">Button 1</button>
+<button onclick="clicked(event)">Button 2</button>
+<button onclick="clicked(event)">Button 3</button>
+</body>
+<script>
+    function clicked(event){
+      alert(event.target.textContent);
+    }
+</script>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Set Attribute</title>
+    <style>
+        .bg-1{
+            background-color: red;
+        }
+        .bg-2{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<p id="para1">This is first paragraph</p>
+<p id="para2" class="bg-2">This is second paragraph</p>
+</body>
+<script>
+    var para1 = document.getElementById("para1");
+    para1.setAttribute("class", "bg-1")
+
+    var para2 = document.getElementById("para2");
+    para2.removeAttribute("class")
+</script>
+</html>

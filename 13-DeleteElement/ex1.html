@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Delete Element</title>
+</head>
+<body>
+<h1 id="one">One</h1>
+<h1>Two</h1>
+<button id="btn">Delete</button>
+<script>
+    var heading = document.getElementById("one");
+    var btn = document.getElementById("btn");
+    btn.addEventListener("click", function (){
+        heading.remove();
+    })
+</script>
+</body>
+</html>

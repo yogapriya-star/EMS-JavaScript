@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Add EventListener to change color</title>
+    <style>
+        .red{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+        .black{
+            background-color: black;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="red"></div>
+<button id="btn1">Add black Color</button>
+<button id="btn2">Remove black Color</button>
+<script>
+    var d = document.querySelector(".red");
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    btn1.addEventListener("click", function (){
+       d.classList.add("black");
+    });
+    btn2.addEventListener("click", function (){
+        d.classList.remove("black");
+    });
+</script>
+</body>
+</html>
